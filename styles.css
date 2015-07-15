@@ -1,0 +1,131 @@
+/****************************
+GENERAL
+****************************/
+
+body {
+  font-family: 'Open-sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/****************************
+HEADING
+****************************/
+
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;  
+}
+
+logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Changa-One', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-size: 0.95em;
+  margin: 5px 0 0;
+  font-weight: normal;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.95em;
+  color: grey;
+}
+
+/****************************
+PAGE: ABOUT
+****************************/
+
+.profile-photo {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 20px;
+}
+
+/****************************
+PAGE: CONTACT
+****************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+.contact-info li.phone a {
+  background-image: url ('http://www.clipartbest.com/cliparts/4i9/Rnz/4i9Rnz6iE.png')
+}
+.contact-info li.mail a {
+ background-image: url('http://www.clipartbest.com/cliparts/9c4/e6e/9c4e6eLpi.png')
+}
+.contact-info li.twitter a {
+ background-image: url('http://icons.iconarchive.com/icons/custom-icon-design/pretty-social-media/256/twitter-icon.png')
+}
+/**********************
+Flexbox Layout
+**********************/
+
+.header, .nav {
+  display: flex;
+  flex-direction = column;
+}
+
+.header {
+  flex: 1;
+  justify-content: space-around;
+}
+
+@media all and (min-width: 640 px) {
+  .header, .nav; {
+    flext-direction: row;
+  }
+}
+
+@media all and (min-width: 1030px) {
+  .nav {
+    flex: none;
+  }
+}
