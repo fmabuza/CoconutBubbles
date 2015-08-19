@@ -3,42 +3,90 @@
   <head>
     <meta charset="utf-8">
     <title>Felicia Mabuza | Writer</title>
-    <link rel="stylesheet" href="styles.css">
-      <link href='http://fonts.googleapis.com/css?family=Monofett|EB+Garamond|Open+Sans|Open+Sans+Condensed:300|Cedarville+Cursive' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/my-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Monofett|EB+Garamond|Open+Sans|Open+Sans+Condensed:300|Cedarville+Cursive' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header>
-      <a href="index.html">
-        <h1>Coconut Bubbles</h1>
-        <h2>Everything about the Heart</h2>
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html"> Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="selected">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+      <!--navbar-->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                                
+         </button>
+              <a class="navbar-brand text-muted" href="#">Coconut Bubbles</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li class="active"><a href="contact.html" class="selected">Contact</a></li>
+                          <li><a href="poetry.html">Poetry</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--end navbar-->
     <div id="wrapper">
     <section>
-      <h3>General Information</h3>
+      <h3>ABOUT THE AUTHOR:</h3>
       <p>I have some works published and manuscripts that are not yet published. If you have any questions, please don't hesitate to contact me!</p>
       
       <p>Please only use phone contact for publishing opportunities, otherwise Twitter and email are the best way to reach me.</p>
     </section>
     <section>
       <h3>Contact Details</h3>
+
       <ul class="contact-info">
-        <li class="phone"><a href="tel:502-408-9881">502-408-9881</li>
-        <li class="mail"><a href="mail to:fmabuza@gmail.com">fmabuza@gmail.com</li>
-        <li class="twitter"><a href="htt://twitter.com/intent/tweet?screen_name=fe2li2cia2">@fe2li2cia2</a></li>
+        <li class="phone"><span class="glyphicon glyphicon-earphone"></span><a href="tel:502-408-9881">502-408-9881</li>
+        <li class="mail"><span class="glyphicon glyphicon-envelope"></span><a href="mailto:fmabuza@gmail.com">fmabuza@gmail.com</a></span></li>
+        <li class="twitter"><span class="glyphicon glyphicon-icon-twitter"></span><a href="http://twitter.com/intent/tweet?screen_name=fe2li2cia2">@fe2li2cia2</a></li>
       </ul>
     </section>
+      
+    <!--http://marcoceppi.github.io/bootstrap-glyphicons/-->
+    
+     <p>Do you have Matters of the heart?</p>                                                                                                         <fieldset>
+        <legend><span class="number"> 1 </span>Submit Your Poem</legend>
+        <label for="title">Poem Title:</label>
+        <input type="text" id='title' name="user_title">
+
+       <label for='title'Poem Title:</label><br>
+          <textarea id="title" name="user_title"></textarea>
+        <button type="submit">Publish</button>  
+        </fieldset>
+         <h1>Sign Up</h1>  
+          <legend><span class="number"> 2 </span>Your basic info</legend>
+        <label for="name">Name:</label>
+        <input type="text" id='name' name="user_name">
+
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password"><br>
+
+          <label for="Genre">Poetry Genre:</label>
+          <input type="genre" id="genre" name="user_genre"><br>
+
+         <label>Age:</label>  
+         <input type="radio" id="under_18" value="under_18" name="user_age"><label for under_18 class="light">Under 18</label>
+         <input type="radio" id="over_18" value="over_18" name="user_age"><label for over_18 class="light">18 or Older</label>
+    </fieldset>
+    <fieldset>
+        
+        <label for='bio'>Biography:</label>
+        <textarea id="bio" name="user_bio"></textarea>
+        <button type="submit"> Sign Up</button>
+    </fieldset></div>
   <footer>
+  
     <a href="http://twitter.com/fe2li2cia2"><img src="img/twitter-wrap.png" alt="Twitter Logo"></a>
     <a href="http://facebook.com/feliciamabuza"><img src="img/facebook-wrap.png" alt="Facebook Logo"></a>
-    
+  
    /***************
     <div style="position:relative;width:267px;height:25px;overflow:hidden;">
   <audio controls>
@@ -49,5 +97,7 @@
  *******************************/
 </div>
     <p>&copy; 2015 Felicia Mabuza.</p></footer>
+     <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>   
 </html>

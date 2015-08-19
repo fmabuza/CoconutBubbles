@@ -1,0 +1,53 @@
+/* Typography
+===============================*/
+.navbar-text {
+    font-weight: bold;
+    margin-right: 0;
+}
+
+.navbar {
+    color: #FFFFFF;
+   
+}
+
+
+.poem{
+ 
+    border:none;
+}
+
+.selected{
+ background-color:red;
+    
+}
+/* Layout
+===============================*/
+
+body {
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+/* Jumbotron
+===============================*/
+
+.jumbotron {
+    text-align: center;
+}
+
+/* Logos & Icons
+===============================*/
+
+.main-logo {
+    width: 124px;
+    height: 34px;
+    margin-top: 22px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url('../img/frozen-bubbles.jpg') no-repeat;
+    background-size: 100%;
+}

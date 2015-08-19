@@ -1,0 +1,37 @@
+
+body {
+     margin: 0;
+     padding: 0;
+     background-color: #ffffff;    
+}
+
+
+h1 {
+    font-size: 90px;
+    color: darkslategrey;
+}
+   
+h2 {
+    font-size: 53px;
+    color: darkslategrey;
+}
+
+h3 {
+    font-size: 45px;
+    color: darkslategrey;
+}
+
+h4 {
+    font-size: 35px;
+    color: dimgrey;
+}
+
+li{
+    list-style-type:none;
+    
+}
+
+ 
+ .body {
+     background-color: transparent; 
+ }
