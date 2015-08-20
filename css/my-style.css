@@ -38,10 +38,25 @@ body {
     text-align: center;
 }
 
+/* Carousel
+===============================*/
+.carousel-indicators {
+    bottom: 0;
+}
+
+.carousel-indicators .active {
+    background-color: #222;
+}
+
+.carousel-indicators li {
+    border: #222;
+}
+
+
 /* Logos & Icons
 ===============================*/
 
-.main-logo {
+.header {
     width: 124px;
     height: 34px;
     margin-top: 22px;
